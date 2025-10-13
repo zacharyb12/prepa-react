@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+
+    <div id="root"></div>
+    <div id="root2"></div>
+    
+    <!-- Import de React and ReactDOM via CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Import de Babel pour la transpilation du JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Script Babel : permet de convertir le JSX en JavaScript -->
+    <script type="text/babel">
+
+        // Ici fonctionnement basique on injecte du JSX dans la div root qui à été selectionnée
+        // on utilise ReactDOM.createRoot pour créer une racine React dans l'élément avec l'id 'root'
+
+        // selection de la div root
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        
+        // Ensuite on utilise la méthode render pour afficher du contenu React dans cette racine
+        root.render(<h2>Hello React!</h2>);
+        
+        // selection de la div root2
+        const root2 = ReactDOM.createRoot(document.getElementById('root2'));
+
+        // Creation d'un composant fonctionnel App qui retourne du JSX
+        function App() {
+            return (
+                <div>
+                    <h1>Bienvenue dans mon application React!</h1>
+                    <p>Ceci est un paragraphe dans mon composant App.</p>
+                </div>
+            );
+        }
+
+        // On rend le composant App dans la div root2
+        root2.render(<App />);
+
+
+
+    </script>
+</body>
+</html>

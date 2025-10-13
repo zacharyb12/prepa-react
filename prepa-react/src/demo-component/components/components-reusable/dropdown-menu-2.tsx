@@ -21,15 +21,14 @@ function toggleDropdown(){
                 
                 <ul onMouseLeave={toggleDropdown} className="dropdown">
                     <li><Link to="/hooks" onClick={toggleDropdown} className="links" >Hooks</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >State</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >Formulaires</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >Communications composants</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >Effect</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >AJAX</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >Fragments</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >Hooks Personnalisé</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >Délégation de contenu</Link></li>
-                    <li><Link to="/hooks" onClick={toggleDropdown} className="links" >L'objet " ref "</Link></li>
+                    <li><Link to="/hooks-state" onClick={toggleDropdown} className="links" >State</Link></li>
+                    <li><Link to="/form" onClick={toggleDropdown} className="links" >Formulaires</Link></li>
+                    <li><Link to="/communication" onClick={toggleDropdown} className="links" >Communications composants</Link></li>
+                    <li><Link to="/hooks-effect" onClick={toggleDropdown} className="links" >Effect</Link></li>
+                    <li><Link to="/ajax" onClick={toggleDropdown} className="links" >AJAX</Link></li>
+                    <li><Link to="/hooks-perso" onClick={toggleDropdown} className="links" >Hooks Personnalisé</Link></li>
+                    <li><Link to="/delegation" onClick={toggleDropdown} className="links" >Délégation de contenu</Link></li>
+                    <li><Link to="/hooks-ref" onClick={toggleDropdown} className="links" >L'objet " ref "</Link></li>
                 </ul>
             )}
         </div>
