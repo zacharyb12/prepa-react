@@ -2,6 +2,8 @@ function StructureProject() {
 
     return(
         <>
+        <section>
+
             <h1 className="text-center">Structure Project</h1>
             <div className="container mt-4">
                 <h2>Structure d'un projet React Vite</h2>
@@ -52,6 +54,7 @@ function StructureProject() {
                     Cette structure facilite le développement rapide et modulaire avec React et Vite.
                 </p>
             </div>
+        </section>
         </>
     )
 }

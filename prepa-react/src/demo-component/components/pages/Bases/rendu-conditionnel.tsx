@@ -8,6 +8,8 @@ function RenduConditionnel() {
     }
     return (
         <>
+        <section>
+            <h1>Rendu Conditionnel</h1>
             <p>
                 En React, le rendu conditionnel permet d'afficher ou de masquer des éléments en fonction d'une condition. 
                 Cela se fait généralement avec des opérateurs JavaScript comme <code>if</code>, <code>? :</code> (ternaire) ou <code>&&</code>.
@@ -31,6 +33,7 @@ function RenduConditionnel() {
             })()} 
             
             <button onClick={toggleValue}>change value</button>
+        </section>
             </>
     )
 }

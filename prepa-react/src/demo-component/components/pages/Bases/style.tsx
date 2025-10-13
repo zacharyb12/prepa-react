@@ -1,6 +1,8 @@
 function Styles() {
     return (
         <>
+        <section>
+
             <h1 className="text-center">Le Style</h1>
             <p>
                 En React, il existe plusieurs façons d'appliquer du style à vos composants :
@@ -32,6 +34,7 @@ function Styles() {
             <pre>
                 {`<button style={{ backgroundColor: 'blue', color: 'white' }}>Cliquez-moi</button>`}
             </pre>
+        </section>
         </>
     );
 }

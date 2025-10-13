@@ -3,6 +3,8 @@
 function Navigation() {
     return (
         <>
+        <section>
+            <h1>La Navigation en React</h1>
             <div className="navigation-details">
                 <h2>Fonctionnement de la navigation en React</h2>
                 <p>
@@ -44,7 +46,9 @@ function App() {
                 <p>
                     <strong>Résumé :</strong> La navigation en React est déclarative et permet de créer des applications monopage (SPA) fluides. Elle repose sur la gestion des routes et l'utilisation de composants dédiés pour le changement de vue.
                 </p>
-            </div> </>
+            </div> 
+  </section>
+            </>
     );
 }
 export default Navigation;
