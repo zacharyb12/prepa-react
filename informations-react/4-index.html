@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello</h1>
+
+    <div id="root1"></div>
+    <div id="root2"></div>
+    <div id="root3"></div>
+
+    <!-- Import de React and ReactDOM via CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Import de Babel pour la transpilation du JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Script Babel : permet de convertir le JSX en JavaScript -->
+    <script type="text/babel">
+
+        // Ici fonctionnement basique on injecte du JSX dans la div root qui à été selectionnée
+        // on utilise ReactDOM.createRoot pour créer une racine React dans l'élément avec l'id 'root'
+
+         // On utilise ReactDOM pour manipuler le DOM
+         // qui nous donne accès à la méthode render qui prend deux arguments :
+         // 1. Le contenu React (JSX) à afficher
+         // 2. L'élément DOM où le contenu doit être rendu
+
+         ReactDOM.render(
+            // premier argument : le contenu React (JSX)
+            React.createElement('h1', null, 'Hello, REACT !'),
+            // deuxième argument : l'élément DOM où le contenu doit être rendu
+            document.getElementById('root1')
+        )
+
+
+
+        // Methode avec JSX
+                 ReactDOM.render(
+            // premier argument : le contenu React (JSX)
+            <h1> Hello, REACT ! </h1>,
+            // deuxième argument : l'élément DOM où le contenu doit être rendu
+            document.getElementById('root2')
+        )
+
+        
+    </script>
+</body>
+</html>

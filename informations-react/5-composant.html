@@ -1,0 +1,72 @@
+# Creation d'un composant React
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello class</h1>
+
+    <div id="root1"></div>
+    <div id="root2"></div>
+    <div id="root3"></div>
+
+    <!-- Import de React and ReactDOM via CDN -->
+    <script defer src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script defer src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Import de Babel pour la transpilation du JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js" defer></script>
+
+    <!-- Script Babel : permet de convertir le JSX en JavaScript -->
+    <script type="text/babel">
+
+        class Bonjour extends React.Component {
+            
+            render() {
+                return <h4>Bonjour de Réact methode 1</h4>;
+            }
+        }
+
+        ReactDOM.createRoot(
+            // premier argument : le contenu React (JSX)
+            <Bonjour />,
+            // deuxième argument : l'élément DOM où le contenu doit être rendu
+            document.getElementById('root1')
+        )
+
+
+        // methode 2
+        const BonjourFonction = () => {
+            return <h4>Bonjour de Réact methode 2!</h4>;
+        }
+
+        ReactDOM.render(
+            // premier argument : le contenu React (JSX)
+            <BonjourFonction />,
+            // deuxième argument : l'élément DOM où le contenu doit être rendu
+            document.getElementById('root2')
+        )
+
+        // methode 3
+        // On peut dès lors utiliser ce ou ces composants 
+
+        ReactDOM.render(
+            // premier argument : le contenu React (JSX)
+            <div>
+                <Bonjour />
+                <BonjourFonction />
+                <h4>Bonjour de Réact methode 3!</h4>
+            </div>,
+            // deuxième argument : l'élément DOM où le contenu doit être rendu
+            document.getElementById('root3')
+        )
+    </script>
+
+
+
+</body>
+</html>

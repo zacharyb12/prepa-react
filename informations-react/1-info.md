@@ -1,6 +1,6 @@
 # Introduction a React : 
 
-1. - React n'est pas un framework mais une bibliothèque javascript front-end! 
+1. - React n'est pas un framework mais une bibliothèque javascript front-end!( prérequis javascript - html - css ) 
 
 2. - React à été creer en 2011 (sorti en 2013) par meta ( facebook , instagram )
 
